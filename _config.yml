@@ -13,8 +13,8 @@ tagline: Site Tagline
 author :
   name : Michael Benich
   email : benichmt1@gmail.com
-  github : github.com/benichmt1
-  twitter : username
+  github : benichmt1
+  twitter : benichmt1
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
