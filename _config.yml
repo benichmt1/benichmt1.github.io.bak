@@ -82,7 +82,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : benichmt1
     livefyre :
       site_id : 123
     intensedebate :
@@ -100,7 +100,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-58113140-1'
     getclicky :
       site_id : 
     mixpanel :
@@ -115,7 +115,7 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : false
+    provider : all
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
