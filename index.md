@@ -3,6 +3,11 @@ layout: page
 title: Hello World!
 tagline: Supporting tagline
 ---
+{% for post in site.posts %}
+<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+<p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://benichmt1.github.com{{ post.url }}#disqus_thread"></a></small></p>
+{% endfor %} 
+
 {% include JB/setup %}
 
 Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
