@@ -7,6 +7,7 @@ tags: [CTF, Beginner,Buffer Overflow]
 ---
 {% include JB/setup %}
 This problem made for a great introduction to beginner-level buffer overflows in C through an improper fgets(). 
+
 ###Overflow
 
 {% highlight text %}
