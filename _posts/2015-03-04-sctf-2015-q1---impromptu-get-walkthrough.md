@@ -38,7 +38,7 @@ http://compete.sctf.io/problems/2015q1/impromptuget.php?username=admin&password=
 {% endhighlight %}
 
 
-Unfortunately, I did not get any confirmation as to whether or not a username was correct. I was unfamiliar with the BRL-04FXP and honestly thought it was fictitious at first, but when I googled it, I was able to find a [manual (warning:PDF)](http://www.planex.net/pdf/router/BRL-04FXP_Manual_v1.1_Eng.pdf). The manual told me that the default was blank and the password was '0000'.
+Unfortunately, I did not get any confirmation as to whether or not a username was correct. I was unfamiliar with the BRL-04FXP and honestly thought it was fictitious at first, but when I googled it, I was able to find a [manual (<i>warning:PDF</i>)](http://www.planex.net/pdf/router/BRL-04FXP_Manual_v1.1_Eng.pdf). The manual told me that the default was blank and the password was '0000'.
 ![Default Password](https://s3.amazonaws.com/fvd-data/notes/377895/1425527819-t9pwAe/screen.png)
 
 I then tried to pass the parameters and got frustrated when I passed the space character %20 and 0000 to no avail. Utilizing the 'try-harder' mentality, I discovered that the successful username is actually 'blank' and the password is '0000'. The following URL correctly leads to the solution.
