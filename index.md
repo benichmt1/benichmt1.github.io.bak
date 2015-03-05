@@ -8,9 +8,7 @@ tagline: Supporting tagline
 <div class="span7">
 <div class="row">
 <div class="span2">
-<a href="{{ post.url }}" >
-<img border="0" width="250" height="150" src="/img/posts/{{ post.image }}" alt="">
-</a>
+
 </div>
 <div class="span5">
 <h4><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h4>
