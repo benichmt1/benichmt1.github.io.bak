@@ -28,6 +28,7 @@ The [link](http://compete.sctf.io/problems/2015q1/impromptuget.php) led to a PHP
 {% highlight text %}{% highlight http %}
 http://compete.sctf.io/problems/2015q1/impromptuget.php?file=index.html
 {% endhighlight %}
+{% endhighlight %}
 
 This was unsuccessful. I figured that the scope of the competition wouldn't have anything particularly nasty, and since this was only 20 points the solution must be more obvious.
 
@@ -35,7 +36,7 @@ My next step was to try to pass the parameters directly and see if I could glean
 {% highlight text %}{% highlight http %}
 http://compete.sctf.io/problems/2015q1/impromptuget.php?username=admin&password=admin
 {% endhighlight %}
-
+{% endhighlight %}
 
 Unfortunately, I did not get any confirmation as to whether or not a username was correct. I was unfamiliar with the BRL-04FXP and honestly thought it was fictitious at first, but when I googled it, I was able to find a [manual (warning:PDF)](http://www.planex.net/pdf/router/BRL-04FXP_Manual_v1.1_Eng.pdf). The manual told me that the default was blank and the password was '0000'.
 ![Default Password](https://s3.amazonaws.com/fvd-data/notes/377895/1425527819-t9pwAe/screen.png)
@@ -45,7 +46,7 @@ I then tried to pass the parameters and got frustrated when I passed the space c
 {% highlight text %}{% highlight http %}
 http://compete.sctf.io/problems/2015q1/impromptuget.php?username=blank&password=0000
 {% endhighlight %}
-
+{% endhighlight %}
 
 <strong>Difficulty: </strong> 3
 <br>
