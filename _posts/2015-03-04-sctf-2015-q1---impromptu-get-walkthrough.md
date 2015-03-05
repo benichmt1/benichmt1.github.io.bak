@@ -20,8 +20,8 @@ Jonathan cloned our router online access page again... Model number BRL-04FXP by
 Luckily it uses GET. So now it looks like we'll have to just pass the username and password parameters manually. But, we just don't know the username and password...
 
 I'll hand you the link, maybe you can figure it out.
-{% endhighlight %}
-{% endraw %}
 
+{% endraw %}
+{% endhighlight %}
 
                                                                 
