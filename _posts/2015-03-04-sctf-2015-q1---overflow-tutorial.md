@@ -9,7 +9,7 @@ tags: [CTF, Beginner,Buffer Overflow]
 This problem made for a great introduction to beginner-level buffer overflows in C through an improper fgets(). 
  ##Overflow
 
-{% highlight %}
+{% highlight text %}
 Connect to the server with:
 
 nc 104.236.255.49 12341
@@ -18,7 +18,7 @@ nc 104.236.255.49 12341
 Upon connection to the server, a prompt appeared for a username. After entering a username, a simple menu appeared which allowed users to view the source code of a program, attempt to access the flag, or exit.
 {% highlight c %}
 
-#include <stdio.h>
+  #include <stdio.h>
 
 typedef struct
 {
