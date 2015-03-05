@@ -16,7 +16,7 @@ Connect to the server with:
 nc 104.236.255.49 12341
 {% endhighlight %}
 
-Upon connection to the server, a prompt appeared for a username. After entering a username, a simple menu appeared which allowed users to view the source code of a program, attempt to access the flag, or exit.
+Upon connection to the server, a prompt appeared for a username. After entering a username, a simple menu appeared which allowed users to view the source code of a program, attempt to access the flag, or exit. Naturally, I decided to peek at the source code first:
 {% highlight c %}
 
   #include <stdio.h>
@@ -88,3 +88,13 @@ return 0;
 }
 
 {% endhighlight %}
+
+
+Immediately I noticed two important features of this code - the choice did not check for negative responses, and fgets() reading in 34 characters to a character array (name) of only 32 characters. Conveniently for this exercise, fname and authlevel were defined consecutively in the struct. This meant that their locations in memory were adjacent, and overwriting the memory would be fairly simple!
+
+In order to overflow the buffer, I tested a long string of 34 'A' characters. This successfully overwrote 'authlevel' with the ASCII character code for 'A', 065. Since the flag needed an authorization level of 126, I used the same ASCII table to lookup the character for 126 which happens to be the tilde character. By filling the buffer with 34 '~' characters, I overwrote the memory location of authlevel and was able to read the flag.
+
+
+<strong>Difficulty:</strong> 3
+
+<strong>Fun:</strong> 4
