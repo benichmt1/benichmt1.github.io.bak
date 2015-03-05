@@ -9,6 +9,7 @@ tags: [Intermediate, CTF, Tutorial, Reverse Engineering, Assembly]
 This problem is the second in my series on [sCTF Q1](http://www.sctf.io), a high-school capture the flag competition.
 
 ##Hello World
+{% highlight text %}
 {% raw %}
 The flag is less than 8 characters.
 
