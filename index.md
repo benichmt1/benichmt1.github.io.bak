@@ -15,7 +15,9 @@ tagline: Supporting tagline
 <div class="span5">
 <h4><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h4>
 <p>
+{{ post.excerpt }}
 {{ post.summary }}
+
 </p>
 <p>
 <i class="icon-calendar"></i> {{ post.date | date: "%B %e, %Y" }}
