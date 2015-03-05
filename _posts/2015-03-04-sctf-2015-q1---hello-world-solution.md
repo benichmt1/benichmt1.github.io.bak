@@ -24,13 +24,13 @@ The "Have Fun" text was linked to an executable file called 'qwerty.exe' (not po
 I decided to take their warning to heart and scan it with VirusTotal before attempting any sandboxed debugging. The results of my [VirusTotal scan](https://www.virustotal.com/en/file/b584431436f5eef839b0eb5a81c981c2db3c30572538c9b41332c191b939792c/analysis/) were pretty telling - there was something going on with this file. I doubted it was an actual trojan and immediately guessed that the AV software was picking up some sort of obfuscator or packer.
 
 I loaded up a virtual machine and analyzed in [OllyDbG](http://www.ollydbg.de/) and tried to search for the referenced ASCII strings. Olly turned up a few false positives, as seen below, but nothing particularly interesting.
-![OllyDbG](http://i.imgur.com/kV3F1AIm.png)
+![OllyDbG](http://i.imgur.com/kV3F1AIl.png)
 
 There were a few strings which looked familiar to .NET applications, so I put it in [CFF explorer](www.ntcore.com/exsuite.php) and it confirmed my hunch that it was in fact a .NET app.
-![CFF Explorer](http://i.imgur.com/L2373IFm.png)
+![CFF Explorer](http://i.imgur.com/L2373IFl.png)
 
 Now that I knew I was dealing with a .NET app, my next step was to disassemble it. I used [ILSpy](ilspy.net) because it was free compared to Reflector. I didn't find the string I was looking for, but I did receive a major hint - a module titled "ConfusedBy" with a property of "ConfuserEx v0.4.0".
-![ILSpy](http://i.imgur.com/Jj5DCEum.png)
+![ILSpy](http://i.imgur.com/Jj5DCEul.png)
 
 After some research, I was able to peek at the source code for ConfuserEx but decided it would take too much time to work through the decryption manually. Back in the old days, I practiced ReverseMe exercises at a place called Tuts4You, so I decided to do a search of the forum. Conveniently, I remembered my old login and someone had posted a tool that could be used to reverse the Confuser packer. This was the [Tuts4You forum post that I used](https://forum.tuts4you.com/topic/36631-unconfuserex/).
 
