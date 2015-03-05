@@ -2,7 +2,7 @@
 layout: post
 title: "sCTF 2015 Q1 - Impromptu GET Walkthrough"
 description: ""
-category: Tutorial, CTF, Web Security
+category: Tutorial
 tags: [tutorial, CTF, Web Security, beginner]
 ---
 {% include JB/setup %}
