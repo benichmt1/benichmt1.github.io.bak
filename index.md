@@ -30,6 +30,6 @@ tagline: Supporting tagline
 </div>
 {% endfor %}
 
-{% include JB/setup %}
+
 
 
