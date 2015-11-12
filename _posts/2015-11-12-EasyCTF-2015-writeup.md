@@ -25,7 +25,7 @@ Ben Kang
 Coach: Michael Benich
 
 ##lolteam - 65
-###Writeup - Adam Galauner
+<strong>Writeup - Adam Galauner </strong>
 {% highlight text %}
 {% raw %}
 There's a suspicious team out there called lolteam, I got my eyes on them for a while and I managed to wiretap their browser as they were changing their password. What did they change their password to?
