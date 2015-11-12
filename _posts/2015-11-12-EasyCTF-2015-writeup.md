@@ -37,10 +37,11 @@ Before using Wireshark, we were actually able to deduce the flag directly by ope
 
 Upon further searching, a .pcapng file is one that can be opened in Wireshark. Opening the file allowed us to better inspect the packets. The data was very clearly sent in a form along with other dummy data.
 
-![pcapng](http://staff.bbhcsd.org/benichm/files/2015/11/pcapng.png)
+![pcapng](http://staff.bbhcsd.org/benichm/files/2015/11/pcapng1.png)
 
 
 <strong> Difficulty: </strong> 3
+
 <strong> Fun: </strong> 3
 
 
