@@ -10,11 +10,16 @@ These writeups are for [EasyCTF](http://www.easyctf.com), another high-school ca
 This was our school's first time competing in EasyCTF.
 
 Brecksville-Broadview Heights High School
+
 Team: 
 Anthony Citraro
+
 Adam Galauner
+
 Josh Jacob
+
 Eric Fu
+
 Ben Kang
 
 Coach: Michael Benich
